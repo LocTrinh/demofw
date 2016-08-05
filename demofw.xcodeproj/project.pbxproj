@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		6EB8C96E1D5429910013FBCA /* demofw.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB8C96D1D5429910013FBCA /* demofw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EB8C9761D542C780013FBCA /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8C9751D542C780013FBCA /* Test.swift */; };
+		6EB8C9E71D5436F10013FBCA /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB8C9E61D5436F10013FBCA /* main.storyboard */; };
+		6EB8C9E91D54385D0013FBCA /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8C9E81D54385D0013FBCA /* HelloViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6EB8C96A1D5429910013FBCA /* demofw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = demofw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB8C96D1D5429910013FBCA /* demofw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demofw.h; sourceTree = "<group>"; };
 		6EB8C96F1D5429910013FBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB8C9751D542C780013FBCA /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		6EB8C9E61D5436F10013FBCA /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		6EB8C9E81D54385D0013FBCA /* HelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				6EB8C96D1D5429910013FBCA /* demofw.h */,
 				6EB8C96F1D5429910013FBCA /* Info.plist */,
+				6EB8C9751D542C780013FBCA /* Test.swift */,
+				6EB8C9E61D5436F10013FBCA /* main.storyboard */,
+				6EB8C9E81D54385D0013FBCA /* HelloViewController.swift */,
 			);
 			path = demofw;
 			sourceTree = "<group>";
@@ -120,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB8C9E71D5436F10013FBCA /* main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB8C9761D542C780013FBCA /* Test.swift in Sources */,
+				6EB8C9E91D54385D0013FBCA /* HelloViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +242,7 @@
 		6EB8C9731D5429910013FBCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +253,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = iteal.demofw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		6EB8C9741D5429910013FBCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
